@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Novo Restaurante</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Restaurante</h1>
+        <nav>
+            <a href="/">Início</a> |
+            <a href="/restaurantes/novo.html">Novo Restaurante</a> |
+            <a href="/pratos/novo.html">Novo Prato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Informações do Restaurante</h2>
+            <form id="restauranteForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo_culinaria">Tipo de Culinária:</label>
+                    <input type="text" id="tipo_culinaria" name="tipo_culinaria">
+                </div>
+
+                <div class="form-group">
+                    <label for="classificacao">Classificação (1-5):</label>
+                    <input type="number" id="classificacao" name="classificacao" min="1" max="5">
+                </div>
+
+                <button type="submit" class="btn-submit">Cadastrar Restaurante</button>
+            </form>
+            <p id="message" class="message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Meu App de Restaurantes</p>
+    </footer>
+
+    <script src="../js/restauranteCadastro.js"></script>
+</body>
+
+</html>
